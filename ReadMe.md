@@ -8,7 +8,7 @@ Scores were evaluated based on their row-wise micro averaged F1-score.
 # Model
 * Used pretrained weight of ResNeSt50 (ResNeSt50-fast-1s1x64d) using this [repository](https://github.com/zhanghang1989/ResNeSt).
 * Finetune this above model.
-# Training
+# Training [Sample](https://github.com/jiten597/Audio-Classification/blob/master/Birdsong_resnest50_training.ipynb)
 * Randomly crop 5 seconds for each train audio clip each epoch.
 * Used BCELoss.
 * Trained 50 epoch and saved the weight which got best loss (this is because f1 score relies on thresholds.)
@@ -26,9 +26,10 @@ SpecAugment consists of three consecutive augmenatation methods:
 * **Time warp:** exchange some tuple of points in a row audio signal.
 * **Frequency masking:** mask some horizontal line inside a mel-spectrogram.
 * **Time masking:** mask some vertical line inside a mel-spectrogram.
-# Inference
+# Inference [Sample]([Training Sample](https://github.com/jiten597/Audio-Classification/blob/master/Birdsong_resnest50_inference.ipynb))
 **OOF (Out of Fold) Ensemble**
-Ensemble the models from each fold which was saved the weight got best loss.
+Training is done in 5 folds and Augmentation has applied on 2 folds out of 5.
+Ensemble the 5 models (2:Augmented, 3:non-augmented) from each fold which was saved the weight got best loss.
 
 # Reference
 ### ResNeSt: Split-Attention Networks
