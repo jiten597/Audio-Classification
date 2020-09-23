@@ -31,10 +31,13 @@ SpecAugment consists of three consecutive augmenatation methods:
 Ensemble the models from each fold which was saved the weight got best loss.
 
 # Reference
-## ResNeSt: Split-Attention Networks
+### ResNeSt: Split-Attention Networks
 author: Hang Zhang, Chongruo Wu, Zhongyue Zhang, Yi Zhu, Zhi Zhang, Haibin Lin, Yue Sun, Tong He, Jonas Muller, R. Manmatha, Mu Li and Alex Smola
+
 paper: [arXiv 2004.08955](https://arxiv.org/abs/2004.08955)
+
 code: [GitHub](https://github.com/koukyo1994/kaggle-birdcall-resnet-baseline-training)
-## SpecAugment
+### SpecAugment
 paper: [arXiv 1904.08779](https://arxiv.org/pdf/1904.08779.pdf)
+
 code: [GitHub](https://github.com/zcaceres/spec_augment)
