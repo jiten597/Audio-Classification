@@ -1,4 +1,5 @@
-# [Cornell Birdcall Identification Competition](https://www.birdwatchersdigest.com/bwdsite/wp-content/uploads/2020/03/prairie-warbler-male.jpg)
+# [Cornell Birdcall Identification Competition]
+![BirdCall](https://www.birdwatchersdigest.com/bwdsite/wp-content/uploads/2020/03/prairie-warbler-male.jpg)
 Solution to the [Cornell Birdcall Identification competition](https://www.kaggle.com/c/birdsong-recognition) hosted on Kaggle.
 
 # Context
