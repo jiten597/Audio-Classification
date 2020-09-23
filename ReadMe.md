@@ -27,7 +27,7 @@ SpecAugment consists of three consecutive augmenatation methods:
 * **Frequency masking:** mask some horizontal line inside a mel-spectrogram.
 * **Time masking:** mask some vertical line inside a mel-spectrogram.
 
-# Inference ([Inference Sample](https://github.com/jiten597/Audio-Classification/blob/master/Birdsong_resnest50_inference.ipynb))
+# Inference ([Sample](https://github.com/jiten597/Audio-Classification/blob/master/Birdsong_resnest50_inference.ipynb))
 **OOF (Out of Fold) Ensemble**
 Training is done in 5 folds and Augmentation has applied on 2 folds out of 5.
 Ensemble the 5 models (2:Augmented, 3:non-augmented) from each fold which was saved the weight got best loss.
