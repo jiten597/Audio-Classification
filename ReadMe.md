@@ -16,7 +16,25 @@ Scores were evaluated based on their row-wise micro averaged F1-score.
 * Used StratifiedKFold(n_splits=5) to split dataset.
 * batch_size: 50
 * melspectrogram parameters
-* * n_mels: 128
-* * fmin: 20
-* * fmax: 16000
+  * n_mels: 128
+  * fmin: 20
+  * fmax: 16000
 * image size: 224x547
+# Augmentation
+## SpecAugment [arXiv 1904.08779](https://arxiv.org/pdf/1904.08779.pdf)
+SpecAugment consists of three consecutive augmenatation methods:
+* **Time warp:** exchange some tuple of points in a row audio signal.
+* **Frequency masking:** mask some horizontal line inside a mel-spectrogram.
+* **Time masking:** mask some vertical line inside a mel-spectrogram.
+# Inference
+**OOF (Out of Fold) Ensemble**
+Ensemble the models from each fold which was saved the weight got best loss.
+
+# Reference
+## ResNeSt: Split-Attention Networks
+author: Hang Zhang, Chongruo Wu, Zhongyue Zhang, Yi Zhu, Zhi Zhang, Haibin Lin, Yue Sun, Tong He, Jonas Muller, R. Manmatha, Mu Li and Alex Smola
+paper: [arXiv 2004.08955](https://arxiv.org/abs/2004.08955)
+code: [GitHub](https://github.com/koukyo1994/kaggle-birdcall-resnet-baseline-training)
+## SpecAugment
+paper: [arXiv 1904.08779](https://arxiv.org/pdf/1904.08779.pdf)
+code: [GitHub](https://github.com/zcaceres/spec_augment)
